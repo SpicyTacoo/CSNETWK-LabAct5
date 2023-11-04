@@ -5,13 +5,13 @@ import sys # In order to terminate the program
 serverSocket = socket(AF_INET, SOCK_STREAM)
 #Prepare a sever socket
 #Fill in start
+serverSocket.listen(1)
 #Fill in end
-
 
 while True:
     #Establish the connection
     print('CSNETWK Web Server is ready to serve...')
-    connectionSocket, addr = #Fill in start     #Fill in end
+    connectionSocket, addr = serverSocket.accept() #Fill in start  #Fill in end
     try:
         message = #Fill in start #Fill in end
         filename = message.split()[1]
